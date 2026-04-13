@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-indigo-custom: #6366f1;
+  --color-coral-custom: #f43f5e;
+  --color-mint-custom: #10b981;
+  --color-space-dark: #0f172a;
+  --color-space-light: #f8fafc;
+
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-space-light text-slate-900 antialiased overflow-x-hidden;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 hover:border-indigo-custom/50 transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-full bg-indigo-custom text-white font-semibold hover:bg-indigo-600 transition-all active:scale-95 shadow-lg shadow-indigo-500/20;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full bg-coral-custom text-white font-semibold hover:bg-coral-600 transition-all active:scale-95 shadow-lg shadow-coral-500/20;
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
