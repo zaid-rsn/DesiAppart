@@ -1,4 +1,4 @@
-`import React from 'react';
+import React from 'react';
 import ProductCard3D from '../components/ProductCard3D';
 import { motion } from 'framer-motion';
 
