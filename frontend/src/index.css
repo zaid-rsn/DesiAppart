@@ -32,11 +32,11 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-full bg-indigo-custom text-white font-semibold hover:bg-indigo-600 transition-all active:scale-95 shadow-lg shadow-indigo-500/20;
+    @apply px-6 py-3 rounded-full bg-indigo-custom text-white font-semibold hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-indigo-500/20;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 rounded-full bg-coral-custom text-white font-semibold hover:bg-coral-600 transition-all active:scale-95 shadow-lg shadow-coral-500/20;
+    @apply px-6 py-3 rounded-full bg-coral-custom text-white font-semibold hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-coral-500/20;
   }
   
   .floating-element {
